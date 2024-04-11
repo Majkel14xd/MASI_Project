@@ -71,7 +71,7 @@ namespace Uniterm
                 }
                 if (eA != "")
                 {
-                    DrawElim(new Point(30, fontsize * 3 + 30));
+                    //DrawElim(new Point(30, fontsize * 3 + 30));
                 }
             }
         }
@@ -92,7 +92,7 @@ namespace Uniterm
             DrawBezier(new Point(pt.X, pt.Y - 1), len);
         }
 
-      public void DrawElim(Point pt)
+      /*public void DrawElim(Point pt)
         
       {
             if (eA == "" || eB == "" || eC == "") return;
@@ -106,7 +106,7 @@ namespace Uniterm
 
             DrawText(p2, text);
             DrawVert(pt, (int)l);
-        }
+        }*/
 
         public void DrawSwitched(Point pt)
         {
@@ -124,13 +124,13 @@ namespace Uniterm
             if (oper == 'A')
             {
                 DrawText(new Point(pt.X + length + (fontsize / 3), pt.Y + 3), sOp + sB);
-                DrawElim(new Point(pt.X + (fontsize / 3), pt.Y + 3));
+                DrawSek(new Point(pt.X + (fontsize / 3), pt.Y + 3));
                 length += GetTextLength(sOp + sB) + (int)(fontsize / 3);
             }
             if (oper == 'B')
             {
                 DrawText(pt, sA + sOp);
-               DrawElim(new Point(pt.X + GetTextLength(sA + sOp) + (fontsize / 3), pt.Y));
+               DrawSek(new Point(pt.X + GetTextLength(sA + sOp) + (fontsize / 3), pt.Y));
                 length += GetTextLength(sA + sOp) + (int)(fontsize / 3);
             }
             sOp = Convert.ToString(sOp[1]);
@@ -141,7 +141,7 @@ namespace Uniterm
 
         #region Private Methods
 
-        private void DrawVert(Point pt, int length)
+       /* private void DrawVert(Point pt, int length)
         {
             dc.DrawLine(pen, pt, new Point { X = pt.X, Y = pt.Y + length });
             double b = (Math.Sqrt(length) / 2) + 2;
@@ -149,7 +149,7 @@ namespace Uniterm
             dc.DrawLine(pen, new Point(pt.X - (b / 2), pt.Y), new Point(pt.X + (b / 2), pt.Y));
             dc.DrawLine(pen, new Point(pt.X - (b / 2), pt.Y + length), new Point(pt.X + (b / 2), pt.Y + length));
 
-        }
+        }*/
 
         private void DrawBezier(Point p0, int length)
         {
