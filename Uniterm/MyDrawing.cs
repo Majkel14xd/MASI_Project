@@ -71,7 +71,7 @@ namespace Uniterm
                 }
                 if (eA != "")
                 {
-                    //DrawElim(new Point(30, fontsize * 3 + 30));
+                    DrawSek(new Point(30, fontsize * 6 + 30));
                 }
             }
         }
@@ -86,10 +86,15 @@ namespace Uniterm
         public void DrawSek(Point pt)
         {
             if (sA == "" || sOp == "") return;
+            Point p2 = new Point(pt.X + 2, pt.Y);
             int len = GetTextLength(sA + sOp + sB);
 
-            DrawText(pt, sA + sOp + sB);
-            DrawBezier(new Point(pt.X, pt.Y - 1), len);
+            string text = sA + Environment.NewLine.ToString() + sOp+ Environment.NewLine.ToString() +sB;
+
+            double l = GetTextHeight(text) + 2;
+
+            DrawText(p2, text);
+            DrawBezier(pt, (int)l);
         }
 
       /*public void DrawElim(Point pt)
@@ -110,28 +115,28 @@ namespace Uniterm
 
         public void DrawSwitched(Point pt)
         {
-            if (sA == "" || sOp == "" || eA == "" || eB == "" || eC == "") return;
+            if (sA == "" || sOp == "") return;
 
 
-            string textElim = eA + Environment.NewLine.ToString() + ";" + Environment.NewLine.ToString() +
-                eB + Environment.NewLine.ToString() +
-                ";" + Environment.NewLine.ToString() + eC;
+            string firsttext = sA + Environment.NewLine.ToString() + sOp + Environment.NewLine.ToString() + sB;
+            string secondtext = sOp + Environment.NewLine.ToString() + sB;
 
-            int length = GetTextLength(textElim);
+            int length = GetTextLength(firsttext);
 
             sOp = " " + sOp + " ";
 
             if (oper == 'A')
             {
-                DrawText(new Point(pt.X + length + (fontsize / 3), pt.Y + 3), sOp + sB);
-                DrawSek(new Point(pt.X + (fontsize / 3), pt.Y + 3));
-                length += GetTextLength(sOp + sB) + (int)(fontsize / 3);
+        
+                DrawText(new Point(pt.X + length + (fontsize / 2), pt.Y + 2), sOp + sB);
+                DrawSek(new Point(pt.X + (fontsize / 2), pt.Y + 2));
+                length += GetTextLength(secondtext) + (int)(fontsize / 2);
             }
             if (oper == 'B')
             {
                 DrawText(pt, sA + sOp);
-               DrawSek(new Point(pt.X + GetTextLength(sA + sOp) + (fontsize / 3), pt.Y));
-                length += GetTextLength(sA + sOp) + (int)(fontsize / 3);
+               DrawSek(new Point(pt.X + GetTextLength(sA + sOp) + (fontsize / 2), pt.Y));
+                length += GetTextLength(sA + sOp) + (int)(fontsize / 2);
             }
             sOp = Convert.ToString(sOp[1]);
             DrawBezier(pt, length + 5); //+5 poniewaz Kreska tyle zajmuje
@@ -156,16 +161,16 @@ namespace Uniterm
             Point start = p0;
             Point p1 = new Point(), p2 = new Point(), p3 = new Point();
 
-            p3.Y = p0.Y;
-            p3.X = p0.X + length;
+            p3.X = p0.X;
+            p3.Y = p0.Y + length;
 
             int b = (int)Math.Sqrt(length) + 2;
 
-            p1.X = p0.X + (int)(length * 0.25);
-            p1.Y = p0.Y - b;
+            p1.X = p0.X - b;
+            p1.Y = p0.Y + (int)(length * 0.25);
 
-            p2.X = p0.X + (int)(length * 0.75);
-            p2.Y = p0.Y - b;
+            p2.X = p0.X - b;
+            p2.Y = p0.Y + (int)(length * 0.75);
 
             foreach (Point pt in GetBezierPoints(p0, p1, p2, p3))
             {
