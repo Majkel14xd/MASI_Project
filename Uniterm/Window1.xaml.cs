@@ -26,10 +26,12 @@ namespace Uniterm
     {
         public Window1()
         {
+
             InitializeComponent();
         }
 
         DataBase db;
+
         bool nowy = false, modified = false;
         private void btnAdd_Click(object sender, RoutedEventArgs e)
         {
@@ -58,16 +60,16 @@ namespace Uniterm
 
 
             db = new DataBase();
-          //  DataTable dt = db.CreateDataTable("select name from uniterms;");
+             DataTable dt = db.CreateDataTable("select name from uniterms;");
 
             lbUniterms.SelectionChanged -= ehlbUNitermsSelectionChanged;
             lbUniterms.Items.Clear();
 
 
-          /*  foreach (DataRow dr in dt.Rows)
+          foreach (DataRow dr in dt.Rows)
             {
                 lbUniterms.Items.Add(dr["name"]);
-            }*/
+            }
             modified = false;
             nowy = false;
             lbUniterms.SelectionChanged += ehlbUNitermsSelectionChanged;
@@ -181,7 +183,7 @@ namespace Uniterm
 
         private void MenuItem_Click_1(object sender, RoutedEventArgs e)
         {
-           // Int32 fontsize_1 = (Int32)MyDrawing.fontsize;
+            Int32 fontsize_1 = (Int32)MyDrawing.fontsize;
             try
             {
 

@@ -38,7 +38,8 @@ namespace Uniterm
 
         //public static String connectionString = @"Data Source=KZI-VOSTRO2\VOSTROSQLSERWER;Initial Catalog=BAZ;Integrated Security=True";
 
-      //  public static String connectionString = @"Data Source=KZI-VOSTRO2\VOSTROSQLSERWER;Initial Catalog=DH;Integrated Security=True";
+        //  public static String connectionString = @"Data Source=KZI-VOSTRO2\VOSTROSQLSERWER;Initial Catalog=DH;Integrated Security=True";
+       public static String connectionString = @"Data Source=MICHAL-LAPTOP\SQLEXPRESS;Initial Catalog=MASI;Integrated Security=True";
 
         private SqlConnection conString;
 
@@ -46,15 +47,15 @@ namespace Uniterm
 
         #region Builders and Finalizers
 
-        /*public DataBase()
+        public DataBase()
         {
             this.conString = new SqlConnection(DataBase.connectionString);
-        }*/
+        }
 
-       /* public DataBase(string conStr)
+       public DataBase(string conStr)
         {
             this.conString = new SqlConnection(conStr);
-        }*/
+        }
 
         #endregion
 
@@ -76,7 +77,7 @@ namespace Uniterm
 
         #region Methods
 
-       /* public void Connect()
+       public void Connect()
         {
             try
             {
@@ -90,7 +91,7 @@ namespace Uniterm
             {
                 throw ex;
             }
-        }*/
+        }
 
         public void Disconnect()
         {
@@ -109,11 +110,12 @@ namespace Uniterm
             return new SqlDataAdapter(query, this.ConnectionString);
         }
 
-        /*public DataTable CreateDataTable(string query)
+        public DataTable CreateDataTable(string query)
         {
+            //this.CheckTableorCreate();
             DataTable tab = new DataTable();
 
-           // this.Connect();
+           this.Connect();
 
             if (this.ConnectionString.State == ConnectionState.Open)
             {
@@ -129,7 +131,7 @@ namespace Uniterm
             this.Disconnect();
 
             return tab;
-        }*/
+        }
 
         public DataRow CreateDataRow(string query)
         {
@@ -137,7 +139,7 @@ namespace Uniterm
 
             DataRow row;
 
-           // this.Connect();
+           this.Connect();
 
             if (this.ConnectionString.State == ConnectionState.Open)
             {
@@ -166,7 +168,7 @@ namespace Uniterm
 
         public void RunQuery(string query)
         {
-           // this.Connect();
+           this.Connect();
 
             if (this.ConnectionString.State == ConnectionState.Open)
             {
@@ -180,6 +182,45 @@ namespace Uniterm
             }
 
             this.Disconnect();
+        }
+
+        public void CheckTableorCreate() {
+            this.Connect();
+            String query ="IF EXISTS (SELECT 1 FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_NAME = 'uniterms') SELECT 1 ELSE SELECT 0";
+
+
+            if (this.ConnectionString.State == ConnectionState.Open)
+            {
+
+                SqlCommand cmd = new SqlCommand(query, this.ConnectionString);
+                int result = (int)cmd.ExecuteScalar();
+                if (result == 0) {
+                    string createTableQuery = @"CREATE TABLE uniterms (
+                        name NVARCHAR(255),
+                        description NVARCHAR(255),
+                        sA NVARCHAR(255),
+                        sB NVARCHAR(255),
+                        sOp NVARCHAR(255),
+                        eA NVARCHAR(255),
+                        eB NVARCHAR(255),
+                        eC NVARCHAR(255),
+                        fontSize INT,
+                        fontFamily NVARCHAR(255),
+                        switched CHAR(1)
+                    );";
+                    SqlCommand x = new SqlCommand(createTableQuery, this.ConnectionString);
+                    x.ExecuteNonQuery();
+                }
+
+            }
+            else
+            {
+                throw new Exception("Nie można połączyć się z bazą daych");
+            }
+
+            this.Disconnect();
+
+
         }
         #endregion
     }
