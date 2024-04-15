@@ -112,7 +112,7 @@ namespace Uniterm
 
         public DataTable CreateDataTable(string query)
         {
-            //this.CheckTableorCreate();
+            this.CheckTableorCreate();
             DataTable tab = new DataTable();
 
            this.Connect();

@@ -142,7 +142,7 @@ namespace Uniterm
             
             }
 
-            sOp = Convert.ToString(sOp[1]);
+            
 
             DrawBezier(pt, (int)length,pen);
         }
