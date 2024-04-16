@@ -67,7 +67,7 @@ namespace Uniterm
             {
                 if (sA != "")
                 {
-                    DrawSek(new Point(30, fontsize + 30));
+                    DrawSekpoz(new Point(30, fontsize + 30));
                     DrawSek(new Point(30, fontsize * 6 + 30));
                 }
                 if (eA != "")
@@ -99,7 +99,14 @@ namespace Uniterm
             DrawText(p2, text);
             DrawBezier(pt, (int)l,pen);
         }
-
+        public void DrawSekpoz(Point pt)
+        {
+            if (sA == "" || sOp == "") return;
+            int len = GetTextLength(sA + sOp + sB);
+            Pen pen = new Pen(Brushes.Red, (int)Math.Log(fontsize, 3));
+            DrawText(pt, sA + sOp + sB);
+            DrawBezierpoz(new Point(pt.X, pt.Y - 1), len,pen);
+        }
         /*public void DrawElim(Point pt)
 
         {
@@ -184,6 +191,29 @@ namespace Uniterm
             }
         }
 
+
+        private void DrawBezierpoz(Point p0, int length, Pen pen)
+        {
+            Point start = p0;
+            Point p1 = new Point(), p2 = new Point(), p3 = new Point();
+
+            p3.Y = p0.Y;
+            p3.X = p0.X + length;
+
+            int b = (int)Math.Sqrt(length) + 2;
+
+            p1.X = p0.X + (int)(length * 0.25);
+            p1.Y = p0.Y - b;
+
+            p2.X = p0.X + (int)(length * 0.75);
+            p2.Y = p0.Y - b;
+
+            foreach (Point pt in GetBezierPoints(p0, p1, p2, p3))
+            {
+                dc.DrawLine(pen, start, pt);
+                start = pt;
+            }
+        }
         private void DrawText(Point point, string text)
         {
             dc.DrawText(GetFormattedText(text), point);

@@ -183,7 +183,7 @@ namespace Uniterm
 
         private void MenuItem_Click_1(object sender, RoutedEventArgs e)
         {
-            //Int32 fontsize_1 = (Int32)MyDrawing.fontsize;
+            Int32 fontsize_1 = (Int32)MyDrawing.fontsize;
             try
             {
 
