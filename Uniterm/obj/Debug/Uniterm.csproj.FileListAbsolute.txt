@@ -209,3 +209,23 @@ C:\Users\Micha\Desktop\MASI_Project\Uniterm\obj\Debug\Uniterm.csproj.GenerateRes
 C:\Users\Micha\Desktop\MASI_Project\Uniterm\obj\Debug\Uniterm.csproj.CoreCompileInputs.cache
 C:\Users\Micha\Desktop\MASI_Project\Uniterm\obj\Debug\Uniterm.exe
 C:\Users\Micha\Desktop\MASI_Project\Uniterm\obj\Debug\Uniterm.pdb
+D:\Dokumenty i studia\Projekty\MASI_Project\Uniterm\bin\Debug\Uniterm.exe.config
+D:\Dokumenty i studia\Projekty\MASI_Project\Uniterm\bin\Debug\Uniterm.exe
+D:\Dokumenty i studia\Projekty\MASI_Project\Uniterm\bin\Debug\Uniterm.pdb
+D:\Dokumenty i studia\Projekty\MASI_Project\Uniterm\obj\Debug\Uniterm.csproj.AssemblyReference.cache
+D:\Dokumenty i studia\Projekty\MASI_Project\Uniterm\obj\Debug\AddElem.baml
+D:\Dokumenty i studia\Projekty\MASI_Project\Uniterm\obj\Debug\AddUniterm.baml
+D:\Dokumenty i studia\Projekty\MASI_Project\Uniterm\obj\Debug\AddElem.g.cs
+D:\Dokumenty i studia\Projekty\MASI_Project\Uniterm\obj\Debug\AddUniterm.g.cs
+D:\Dokumenty i studia\Projekty\MASI_Project\Uniterm\obj\Debug\Window1.g.cs
+D:\Dokumenty i studia\Projekty\MASI_Project\Uniterm\obj\Debug\App.g.cs
+D:\Dokumenty i studia\Projekty\MASI_Project\Uniterm\obj\Debug\GeneratedInternalTypeHelper.g.cs
+D:\Dokumenty i studia\Projekty\MASI_Project\Uniterm\obj\Debug\Uniterm_MarkupCompile.cache
+D:\Dokumenty i studia\Projekty\MASI_Project\Uniterm\obj\Debug\Uniterm_MarkupCompile.lref
+D:\Dokumenty i studia\Projekty\MASI_Project\Uniterm\obj\Debug\Window1.baml
+D:\Dokumenty i studia\Projekty\MASI_Project\Uniterm\obj\Debug\Uniterm.g.resources
+D:\Dokumenty i studia\Projekty\MASI_Project\Uniterm\obj\Debug\Uniterm.Properties.Resources.resources
+D:\Dokumenty i studia\Projekty\MASI_Project\Uniterm\obj\Debug\Uniterm.csproj.GenerateResource.cache
+D:\Dokumenty i studia\Projekty\MASI_Project\Uniterm\obj\Debug\Uniterm.csproj.CoreCompileInputs.cache
+D:\Dokumenty i studia\Projekty\MASI_Project\Uniterm\obj\Debug\Uniterm.exe
+D:\Dokumenty i studia\Projekty\MASI_Project\Uniterm\obj\Debug\Uniterm.pdb

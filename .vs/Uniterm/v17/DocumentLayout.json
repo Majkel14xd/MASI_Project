@@ -1,26 +1,26 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Micha\\Desktop\\MASI_Project\\",
+  "WorkspaceRootPath": "D:\\Dokumenty i studia\\Projekty\\MASI_Project\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{826F4E20-6E2B-42DB-9BFC-94FFFCBAF194}|Uniterm\\Uniterm.csproj|c:\\users\\micha\\desktop\\masi_project\\uniterm\\window1.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{826F4E20-6E2B-42DB-9BFC-94FFFCBAF194}|Uniterm\\Uniterm.csproj|D:\\Dokumenty i studia\\Projekty\\MASI_Project\\uniterm\\window1.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{826F4E20-6E2B-42DB-9BFC-94FFFCBAF194}|Uniterm\\Uniterm.csproj|solutionrelative:uniterm\\window1.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{826F4E20-6E2B-42DB-9BFC-94FFFCBAF194}|Uniterm\\Uniterm.csproj|C:\\Users\\Micha\\Desktop\\MASI_Project\\uniterm\\mydrawing.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{826F4E20-6E2B-42DB-9BFC-94FFFCBAF194}|Uniterm\\Uniterm.csproj|d:\\dokumenty i studia\\projekty\\masi_project\\uniterm\\classdiagram.cd||{59B0B277-7DDF-4E36-A3ED-02DAC5B9E2FA}|",
+      "RelativeMoniker": "D:0:0:{826F4E20-6E2B-42DB-9BFC-94FFFCBAF194}|Uniterm\\Uniterm.csproj|solutionrelative:uniterm\\classdiagram.cd||{59B0B277-7DDF-4E36-A3ED-02DAC5B9E2FA}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{826F4E20-6E2B-42DB-9BFC-94FFFCBAF194}|Uniterm\\Uniterm.csproj|D:\\Dokumenty i studia\\Projekty\\MASI_Project\\uniterm\\mydrawing.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{826F4E20-6E2B-42DB-9BFC-94FFFCBAF194}|Uniterm\\Uniterm.csproj|solutionrelative:uniterm\\mydrawing.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{826F4E20-6E2B-42DB-9BFC-94FFFCBAF194}|Uniterm\\Uniterm.csproj|C:\\Users\\Micha\\Desktop\\MASI_Project\\uniterm\\mycanvas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{826F4E20-6E2B-42DB-9BFC-94FFFCBAF194}|Uniterm\\Uniterm.csproj|solutionrelative:uniterm\\mycanvas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{826F4E20-6E2B-42DB-9BFC-94FFFCBAF194}|Uniterm\\Uniterm.csproj|C:\\Users\\Micha\\Desktop\\MASI_Project\\uniterm\\database.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{826F4E20-6E2B-42DB-9BFC-94FFFCBAF194}|Uniterm\\Uniterm.csproj|d:\\dokumenty i studia\\projekty\\masi_project\\uniterm\\database.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{826F4E20-6E2B-42DB-9BFC-94FFFCBAF194}|Uniterm\\Uniterm.csproj|solutionrelative:uniterm\\database.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{826F4E20-6E2B-42DB-9BFC-94FFFCBAF194}|Uniterm\\Uniterm.csproj|C:\\Users\\Micha\\Desktop\\MASI_Project\\uniterm\\window1.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{826F4E20-6E2B-42DB-9BFC-94FFFCBAF194}|Uniterm\\Uniterm.csproj|solutionrelative:uniterm\\window1.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{826F4E20-6E2B-42DB-9BFC-94FFFCBAF194}|Uniterm\\Uniterm.csproj|D:\\Dokumenty i studia\\Projekty\\MASI_Project\\uniterm\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{826F4E20-6E2B-42DB-9BFC-94FFFCBAF194}|Uniterm\\Uniterm.csproj|solutionrelative:uniterm\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,67 +34,67 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "MyCanvas.cs",
-              "DocumentMoniker": "C:\\Users\\Micha\\Desktop\\MASI_Project\\Uniterm\\MyCanvas.cs",
-              "RelativeDocumentMoniker": "Uniterm\\MyCanvas.cs",
-              "ToolTip": "C:\\Users\\Micha\\Desktop\\MASI_Project\\Uniterm\\MyCanvas.cs",
-              "RelativeToolTip": "Uniterm\\MyCanvas.cs",
-              "ViewState": "AQIAABcAAAAAAAAAAAAQwDAAAAATAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-15T06:47:33.898Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 3,
               "Title": "DataBase.cs",
-              "DocumentMoniker": "C:\\Users\\Micha\\Desktop\\MASI_Project\\Uniterm\\DataBase.cs",
+              "DocumentMoniker": "D:\\Dokumenty i studia\\Projekty\\MASI_Project\\Uniterm\\DataBase.cs",
               "RelativeDocumentMoniker": "Uniterm\\DataBase.cs",
-              "ToolTip": "C:\\Users\\Micha\\Desktop\\MASI_Project\\Uniterm\\DataBase.cs",
+              "ToolTip": "D:\\Dokumenty i studia\\Projekty\\MASI_Project\\Uniterm\\DataBase.cs",
               "RelativeToolTip": "Uniterm\\DataBase.cs",
-              "ViewState": "AQIAAGwAAAAAAAAAAADwv3MAAAAfAAAA",
+              "ViewState": "AQIAAHkAAAAAAAAAAAAswOMAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-15T06:19:10.449Z",
+              "WhenOpened": "2024-04-19T21:49:40.875Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "MyDrawing.cs",
-              "DocumentMoniker": "C:\\Users\\Micha\\Desktop\\MASI_Project\\Uniterm\\MyDrawing.cs",
-              "RelativeDocumentMoniker": "Uniterm\\MyDrawing.cs",
-              "ToolTip": "C:\\Users\\Micha\\Desktop\\MASI_Project\\Uniterm\\MyDrawing.cs",
-              "RelativeToolTip": "Uniterm\\MyDrawing.cs",
-              "ViewState": "AQIAADYAAAAAAAAAAAAUwD8AAAA4AAAA",
+              "Title": "ClassDiagram.cd",
+              "DocumentMoniker": "D:\\Dokumenty i studia\\Projekty\\MASI_Project\\Uniterm\\ClassDiagram.cd",
+              "RelativeDocumentMoniker": "Uniterm\\ClassDiagram.cd",
+              "ToolTip": "D:\\Dokumenty i studia\\Projekty\\MASI_Project\\Uniterm\\ClassDiagram.cd",
+              "RelativeToolTip": "Uniterm\\ClassDiagram.cd",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000463|",
+              "WhenOpened": "2024-04-19T18:37:31.92Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "App.xaml.cs",
+              "DocumentMoniker": "D:\\Dokumenty i studia\\Projekty\\MASI_Project\\Uniterm\\App.xaml.cs",
+              "RelativeDocumentMoniker": "Uniterm\\App.xaml.cs",
+              "ToolTip": "D:\\Dokumenty i studia\\Projekty\\MASI_Project\\Uniterm\\App.xaml.cs",
+              "RelativeToolTip": "Uniterm\\App.xaml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-14T21:46:38.532Z",
+              "WhenOpened": "2024-04-19T17:46:07.118Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Window1.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\Micha\\Desktop\\MASI_Project\\Uniterm\\Window1.xaml.cs",
+              "DocumentMoniker": "D:\\Dokumenty i studia\\Projekty\\MASI_Project\\Uniterm\\Window1.xaml.cs",
               "RelativeDocumentMoniker": "Uniterm\\Window1.xaml.cs",
-              "ToolTip": "C:\\Users\\Micha\\Desktop\\MASI_Project\\Uniterm\\Window1.xaml.cs",
+              "ToolTip": "D:\\Dokumenty i studia\\Projekty\\MASI_Project\\Uniterm\\Window1.xaml.cs",
               "RelativeToolTip": "Uniterm\\Window1.xaml.cs",
-              "ViewState": "AQIAANAAAAAAAAAAAAAewOIAAAAAAAAA",
+              "ViewState": "AQIAACkAAAAAAAAAAAAwwC0AAAADAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-14T21:47:11.616Z",
+              "WhenOpened": "2024-04-19T17:42:14.175Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Window1.xaml",
-              "DocumentMoniker": "C:\\Users\\Micha\\Desktop\\MASI_Project\\Uniterm\\Window1.xaml",
-              "RelativeDocumentMoniker": "Uniterm\\Window1.xaml",
-              "ToolTip": "C:\\Users\\Micha\\Desktop\\MASI_Project\\Uniterm\\Window1.xaml",
-              "RelativeToolTip": "Uniterm\\Window1.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-04-15T07:07:07.19Z"
+              "DocumentIndex": 2,
+              "Title": "MyDrawing.cs",
+              "DocumentMoniker": "D:\\Dokumenty i studia\\Projekty\\MASI_Project\\Uniterm\\MyDrawing.cs",
+              "RelativeDocumentMoniker": "Uniterm\\MyDrawing.cs",
+              "ToolTip": "D:\\Dokumenty i studia\\Projekty\\MASI_Project\\Uniterm\\MyDrawing.cs",
+              "RelativeToolTip": "Uniterm\\MyDrawing.cs",
+              "ViewState": "AQIAAPAAAAAAAAAAAAAUwBYBAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-14T21:46:38.532Z",
+              "EditorCaption": ""
             }
           ]
         }
