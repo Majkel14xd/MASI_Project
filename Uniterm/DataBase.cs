@@ -39,7 +39,7 @@ namespace Uniterm
         //public static String connectionString = @"Data Source=KZI-VOSTRO2\VOSTROSQLSERWER;Initial Catalog=BAZ;Integrated Security=True";
 
         //  public static String connectionString = @"Data Source=KZI-VOSTRO2\VOSTROSQLSERWER;Initial Catalog=DH;Integrated Security=True";
-       public static String connectionString = @"Data Source=MICHAL\SQLEXPRESS;Initial Catalog=MASI;Integrated Security=True";
+       public static String connectionString = @"Data Source=MICHAL-LAPTOP\SQLEXPRESS;Initial Catalog=MASI;Integrated Security=True";
 
         private SqlConnection conString;
 

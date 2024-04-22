@@ -1,0 +1,45 @@
+@startuml
+participant Window1
+participant DataBase
+participant MyDrawing
+participant MyCanvas
+
+activate Window1
+Window1 -> DataBase: Connect()
+activate DataBase
+DataBase --> Window1: Poprawne połączenie do bazy
+deactivate DataBase
+Window1 -> MyCanvas: ClearAll()
+activate MyCanvas
+MyCanvas --> MyCanvas: Wyczysc wszytkie elementy
+deactivate MyCanvas
+Window1 -> Window1: CheckSave()
+alt Zapis wyamgany
+Window1 -> Window1: Zapisz zmiany
+else Zapis nie wyamgany
+Window1 -> Window1: Kontynuj bez zapisywania
+end
+Window1 -> MyCanvas: GetXAML()
+activate MyCanvas
+MyCanvas --> Window1: Dane XAML
+deactivate MyCanvas
+Window1 -> DataBase: RunQuery(query)
+activate DataBase
+DataBase --> Window1: Wykonanie zapytania
+deactivate DataBase
+Window1 -> Window1: Wyswietl dane XAML
+Window1 -> MyDrawing: DrawSek(pt: Point)
+activate MyDrawing
+MyDrawing --> Window1: Rysowanie unitermu
+deactivate MyDrawing
+Window1 -> MyDrawing: DrawSekpoz(pt: Point)
+activate MyDrawing
+MyDrawing --> Window1: Rysowanie unitermu w pozycji poziomej
+deactivate MyDrawing
+Window1 -> DataBase: Disconnect()
+activate DataBase
+DataBase --> Window1: Rozłączenie
+deactivate DataBase
+Window1 -> Window1: Zamknij okno
+deactivate Window1
+@enduml

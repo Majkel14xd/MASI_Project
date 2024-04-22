@@ -1,0 +1,24 @@
+@startuml
+class Window1 <<partial>> {
+    + Window1()
+    - db : DataBase
+    - nowy : bool = false
+    - modified : bool = false
+    - btnAdd_Click(sender:object, e:RoutedEventArgs) : void
+    - ehMouseDown(sender:object, e:MouseButtonEventArgs) : void
+    - Window_Loaded(sender:object, e:RoutedEventArgs) : void
+    - ehCBFontsChanged(sender:object, e:SelectionChangedEventArgs) : void
+    - ehcbfSizeChanged(sender:object, e:SelectionChangedEventArgs) : void
+    - Button_Click(sender:object, e:RoutedEventArgs) : void
+    - btnAddEl_Click(sender:object, e:RoutedEventArgs) : void
+    - btnRedraw_Click(sender:object, e:RoutedEventArgs) : void
+    - MenuItem_Click(sender:object, e:RoutedEventArgs) : void
+    - MenuItem_Click_1(sender:object, e:RoutedEventArgs) : void
+    - CheckSave() : bool
+    - ehlbUNitermsSelectionChanged(sender:object, e:SelectionChangedEventArgs) : void
+    - ehNowyClick(sender:object, e:RoutedEventArgs) : void
+    - tbDescKeyUP(sender:object, e:KeyEventArgs) : void
+    - HorScroll_ValueChanged(sender:object, e:RoutedPropertyChangedEventArgs<double>) : void
+}
+Window <|-- Window1
+@enduml

@@ -1,0 +1,17 @@
+@startuml
+
+[Window1] as Window1Component
+[AddElem] as AddElemComponent
+[AddUniterm] as AddUnitermComponent
+[MyCanvas] as MyCanvasComponent
+[MyDrawing] as MyDrawingComponent
+[DataBase] as DataBaseComponent
+
+Window1Component --> MyCanvasComponent
+Window1Component --> MyDrawingComponent
+AddElemComponent --> MyCanvasComponent
+AddUnitermComponent --> MyCanvasComponent
+MyDrawingComponent --> DataBaseComponent
+MyCanvasComponent --> DataBaseComponent
+
+@enduml

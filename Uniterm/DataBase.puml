@@ -1,0 +1,16 @@
+@startuml
+class DataBase {
+    + {static} connectionString : String = @"Data Source=MICHAL-LAPTOP\SQLEXPRESS;Initial Catalog=MASI;Integrated Security=True"
+    - conString : SqlConnection
+    + DataBase()
+    + DataBase(conStr:string)
+    + ConnectionString : SqlConnection <<get>> <<set>>
+    + Connect() : void
+    + Disconnect() : void
+    + CreateAdapter(query:string) : SqlDataAdapter
+    + CreateDataTable(query:string) : DataTable
+    + CreateDataRow(query:string) : DataRow
+    + RunQuery(query:string) : void
+    + CheckTableorCreate() : void
+}
+@enduml

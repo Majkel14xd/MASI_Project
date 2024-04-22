@@ -1,0 +1,25 @@
+@startuml
+
+package "Warstwa prezentacji" {
+  [Window1]
+  [AddElem]
+  [AddUniterm]
+}
+
+package "Warstwa logiczna" {
+  [MyCanvas]
+  [MyDrawing]
+}
+
+package "Warstwa danych" {
+  [DataBase]
+}
+
+[Window1] --> [MyCanvas]
+[Window1] --> [MyDrawing]
+[AddElem] --> [MyCanvas]
+[AddUniterm] --> [MyCanvas]
+[MyDrawing] --> [DataBase]
+[MyCanvas] --> [DataBase]
+
+@enduml

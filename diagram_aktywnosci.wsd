@@ -1,0 +1,20 @@
+@startuml
+
+|User|
+start
+:System Uniterm;
+:Dodanie wyrażenia A metody sekwencji;
+:Dodanie wyrażenia B metody sekwencji;
+:Dodanie znaku operacji metody sekwencji;
+if (Czy przerysowana została operacja?) then (Tak)
+  :Przerysowuje operacje;
+else (Nie)
+ :Nie przerysowuje operacji;
+ endif
+if (Czy zażądano zapisu operacji do bazy?) then (Tak)
+  :Zapisuje dane operacji do bazy danych;
+else (Nie)
+  :Nie zapisuje danych operacji do danych do bazy;
+endif
+:Koniec;
+@enduml
