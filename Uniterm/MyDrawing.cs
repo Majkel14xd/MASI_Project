@@ -129,29 +129,29 @@ namespace Uniterm
 
             string textElim = sA + Environment.NewLine.ToString() + sOp + Environment.NewLine.ToString() + sB;
 
-            int length = GetTextHeight(textElim) + 2;
-            sOp = Environment.NewLine.ToString() + sOp + Environment.NewLine.ToString();
+            int length = GetTextLength(textElim) + 2;
+            sOp = "" + sOp + "";
             Pen pen = new Pen(Brushes.Red, (int)Math.Log(fontsize, 3));
             if (oper == 'A')
             {
-              
-                DrawText(new Point(pt.X+2 , pt.Y + length + fontsize ), Environment.NewLine.ToString()+ sOp + Environment.NewLine.ToString() + sB);
-                DrawSek(new Point(pt.X+2 , pt.Y + fontsize ));
-                length += GetTextHeight(Environment.NewLine.ToString()+sOp +Environment.NewLine.ToString() + sB) + (int)(fontsize);
-        
+
+                DrawText(new Point(pt.X + length + (fontsize / 3), pt.Y + 3), sOp + sB);
+                DrawSek(new Point(pt.X + (fontsize / 3), pt.Y + 3));
+                length += GetTextLength(sOp + sB) + (int)(fontsize / 3);
             }
             if (oper == 'B')
             {
-           
-                DrawText(new Point(pt.X+2, pt.Y),sA + Environment.NewLine.ToString()+ sOp+ Environment.NewLine.ToString());
-                DrawSek(new Point(pt.X+4, GetTextHeight(sA + Environment.NewLine.ToString() + sOp + Environment.NewLine.ToString() + fontsize + Environment.NewLine.ToString() + pt.Y  )));
-                length += GetTextHeight( sA + Environment.NewLine.ToString() + sOp + Environment.NewLine.ToString()+(int)(fontsize));
-            
+
+                DrawText(pt, sA + sOp);
+                DrawSek(new Point(pt.X+2 + GetTextLength(sA + sOp) + (fontsize / 3), pt.Y));
+                length += GetTextLength(sA + sOp) + (int)(fontsize / 3);
+
+
             }
 
-            
 
-            DrawBezier(pt, (int)length,pen);
+
+            DrawBezierpoz(pt, (int)length,pen);
         }
 
         #endregion
